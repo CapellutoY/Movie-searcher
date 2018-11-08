@@ -10,7 +10,7 @@ Pour ajouter l'Api key themoviedb:
 
 * EDITOR="subl --wait" bin/rails credentials:edit <-- tu peux remplacer "subl" par ton editeur de text préféré
 
-* ajouter la clé dans le fichier en suivant ce schema: themoviedb: "tasupercléthemoviedb"
+* ajouter la clé dans le fichier en suivant ce schema: themoviedb: tasupercléthemoviedb
 
 * sauvegarder et fermer le fichier dans ton editeur, si l'operation c'est bien passé ton terminal devrait t'afficher une confirmation de l'ajout de ta clé.
 
