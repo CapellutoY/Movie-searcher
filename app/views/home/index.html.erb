@@ -1,0 +1,19 @@
+<h1>Quel film veux tu chercher?</h1>
+<form action="/" method = "get">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit">Submit</button>
+</form>
+<% if @movies %>
+<h3>
+  <%i = 0%>
+  <% @movies.each do |movie| %>
+  <p>Title :  <%= movie.original_title %></p>
+  <p>Release Date : <%= movie.release_date %></p>
+  <%= image_tag @img_url + movie.poster_path if movie.poster_path %>
+  <br />
+  _____________________________________
+  <%i += 1%>
+  <br />
+  <% end %>
+</h3>
+<% end %>
